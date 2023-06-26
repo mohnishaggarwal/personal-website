@@ -211,10 +211,10 @@ export default function Home({ articles }) {
             I like to build things.
           </h1>
           <p className="mt-10 text-base text-zinc-600 text-lg dark:text-zinc-300">
-            I'm a software engineer based out of Detroit, Michigan.
+            I&apos;m a software engineer based out of Detroit, Michigan.
           </p>
           <p className="mt-2 text-base text-zinc-600 text-lg dark:text-zinc-300">
-            I began programming when I was 14 and haven't stopped since.
+            I began programming when I was 14 and haven&apos;t stopped since.
           </p>
           <p className="mt-2 text-base text-zinc-600 text-lg dark:text-zinc-300">
             I love learning new technologies and building applications that users will love.

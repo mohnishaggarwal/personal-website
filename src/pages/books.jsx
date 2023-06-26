@@ -42,12 +42,12 @@ export default function Uses() {
         <div className="space-y-20">
           <BooksSection title="Currently Reading">
             <Book title="Why We Sleep by Matthew Walker">
-              I have a pretty tough time falling asleep at night, my brain doesn't shut off quickly and before I know it 1 to 2 hours has passed and I'm back to taking another
+              I have a pretty tough time falling asleep at night, my brain doesn&apos;t shut off quickly and before I know it 1 to 2 hours has passed and I&apos;m back to taking another
               melotonin. If this sounds familiar to you, I highly recomend this book. Matthew Walker has dedicated his life to studying sleep and has given suggestions that have
               already began working for me.
             </Book>
             <Book title="But How Do It Know by John Clark Scott">
-              If you're trying to understand computer architecture, I highly recommend this book. It takes a bottom up approach to helping you understand how a computer works. I really
+              If you&apos;re trying to understand computer architecture, I highly recommend this book. It takes a bottom up approach to helping you understand how a computer works. I really
               like how John Scott explains complex hardware conceptc with simple analogies.
             </Book>
           </BooksSection>
