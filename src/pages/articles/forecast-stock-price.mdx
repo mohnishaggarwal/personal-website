@@ -1,0 +1,13 @@
+import { ArticleLayout } from '@/components/ArticleLayout'
+
+export const meta = {
+  author: 'Mohnish Aggarwal',
+  date: '2022-01-05',
+  title: 'How I Like to Forecast Stock Price',
+  href: 'https://blankly.finance/forecasting-stock-price',
+  external: true,
+  description:
+    `I used to value stocks with a discounted cash flow model. I stopped doing so because slight changes in the discount rate can completely change the valuation of a stock. These days, I try to value stocks based on their earnings growth with some sort of end multiple...`,
+}
+
+export default (props) => <ArticleLayout meta={meta} {...props} />

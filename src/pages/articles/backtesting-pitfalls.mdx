@@ -1,0 +1,13 @@
+import { ArticleLayout } from '@/components/ArticleLayout'
+
+export const meta = {
+  author: 'Mohnish Aggarwal',
+  date: '2022-01-04',
+  title: 'Build Better Algorithms: Three Backtesting Pitfalls to Avoid',
+  href: 'https://blankly.finance/backtesting-pitfalls-to-avoid',
+  external: true,
+  description:
+    `In order to understand how well our algorithms will perform in the future, we need to look at how they would have performed in the past. This is backtesting. The process seems easy, but there are many ways it could go wrong...`,
+}
+
+export default (props) => <ArticleLayout meta={meta} {...props} />

@@ -1,0 +1,13 @@
+import { ArticleLayout } from '@/components/ArticleLayout'
+
+export const meta = {
+  author: 'Mohnish Aggarwal',
+  date: '2022-03-30',
+  title: 'How to Create a Stripe Subscription Service with as Few Lines of Code as Possible',
+  href: 'https://blankly.finance/creating-subscriptions-with-stripe',
+  external: true,
+  description:
+    `After creating a team billing service, I was amazed at how incredible Stripe Checkout Sessions were. Collecting payments from customers is hard. There are many possible cases to consider such as verifying payment information, international banking standards, and intermediate bank verification steps...`,
+}
+
+export default (props) => <ArticleLayout meta={meta} {...props} />

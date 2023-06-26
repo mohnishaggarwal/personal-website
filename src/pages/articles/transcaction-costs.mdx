@@ -1,0 +1,13 @@
+import { ArticleLayout } from '@/components/ArticleLayout'
+
+export const meta = {
+  author: 'Mohnish Aggarwal',
+  date: '2022-01-03',
+  title: 'Keep Transaction Costs In Mind!',
+  href: 'https://blankly.finance/keep-transaction-costs-in-mind',
+  external: true,
+  description:
+    `Every time your trading strategy buys or shorts a security, it incurs a cost. This cost could be a brokerage fee, driving the bid-ask spread, or even delays in the time your program takes to send an order to your brokerage and the time the order is executed...`,
+}
+
+export default (props) => <ArticleLayout meta={meta} {...props} />

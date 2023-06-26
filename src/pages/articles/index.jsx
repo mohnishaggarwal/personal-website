@@ -56,12 +56,12 @@ export default function ArticlesIndex({ articles }) {
         <title>Articles - Mohnish Aggarwal</title>
         <meta
           name="description"
-          content="I write ✍️ about software, finance, emerging markets, and just about my life."
+          content="I like to write about tech 🖥️, finance 💸, and history 🏰."
         />
       </Head>
       <SimpleLayout
-        title="I write ✍️ about software, finance, emerging markets, and just about my life."
-        intro="I'll be honest though. This is just a random blob of various ideas and thoughts 😂."
+        title="I like to write about tech 🖥️, finance 💸, and history 🏰."
+        intro="Some articles here are opinionated, so just know some of my opinions have changed over time!"
       >
         <div className="md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40">
           <div className="flex max-w-3xl flex-col space-y-16">
