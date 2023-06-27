@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Head from 'next/head'
-import { GitHubIcon } from '@/components/SocialIcons'
+import { GitHubIcon, YouTubeIcon } from '@/components/SocialIcons'
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
 import blanklyPreview from '@/images/photos/blankly-preview.png'
@@ -11,15 +11,16 @@ const projects = [
     name: 'Blankly',
     description:
       'Blankly makes it incredibly easy for you to go from a trading idea to a full trading algorithm in minutes instead of months. Our open source package has hit 1.6K stars and over 10K downloads / mo. And our platform has hit over 1K users / mo.',
-    link: { href: 'http://blankly.finance', label: 'Check out site' },
-    github: { href: 'https://github.com/Blankly-Finance/Blankly', label: 'Check out Github' },
+    link: 'http://blankly.finance',
+    github: 'https://github.com/Blankly-Finance/Blankly',
+    youtube: 'https://www.youtube.com/watch?v=gBP6X20E-2g&ab_channel=BlanklyFinance',
     preview: blanklyPreview,
   },
   {
     name: 'Michigan Investment Group Platform',
     description:
       'Platform that enables investment teams and members in the club to actively engage and find interesting coverage on stocks including confidence scores on earnings calls via NLP, sentiment analysis, and fundamentals. (pwd: MIG-Rocks)',
-    link: { href: 'https://platform.michiganinvestmentgroup.com', label: 'Check out site' },
+    link: 'https://platform.michiganinvestmentgroup.com/dashboard',
     preview: migPreview
   },
 ]
@@ -70,19 +71,18 @@ export default function Projects() {
                 </div>
               }
               <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
-                <Card.Link href={project.link.href}>{project.name}</Card.Link>
+                <Card.Link href={project.link}>{project.name}</Card.Link>
               </h2>
               <Card.Description>{project.description}</Card.Description>
-              <div className='flex justify-between items-center w-full'>
-                <p className="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-blue-500 dark:text-zinc-200">
-                  <LinkIcon className="h-6 w-6 flex-none" />
-                  <span className="ml-2 hover:text-blue-500">{project.link.label}</span>
-                </p>
+              <div className='flex items-center z-20 w-full relative mt-4 bottom-0 absolute'>
+                <a href={project.link}><LinkIcon className="h-8 w-8 text-zinc-400 transition hover:text-blue-500 dark:text-zinc-200" /></a>
                 {
-                  project.github && <p className="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-blue-500 dark:text-zinc-200">
-                    <GitHubIcon className="h-6 w-6 flex-none" />
-                    <span className="ml-2">{project.github.label}</span>
-                  </p>
+                  project.github &&
+                  <a href={project.github}><GitHubIcon className="h-7 w-7 ml-2 transition hover:fill-zinc-600 dark:group:fill-zinc-300 dark:fill-zinc-400" /></a>
+                }
+                {
+                  project.github &&
+                  <a href={project.youtube}><YouTubeIcon className="h-7 w-7 ml-3 transition hover:fill-zinc-600 dark:group:fill-zinc-300 dark:fill-zinc-400" /></a>
                 }
               </div>
             </Card>
